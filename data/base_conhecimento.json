@@ -1,0 +1,73 @@
+{
+  "phishing": {
+    "descricao": "Phishing é uma tentativa de enganar uma pessoa para que ela forneça informações pessoais, credenciais ou acesse conteúdos maliciosos.",
+    "sinais": [
+      "Mensagens com senso de urgência ou ameaça",
+      "Solicitação inesperada de senhas ou dados pessoais",
+      "Links suspeitos ou endereços diferentes do site oficial",
+      "Erros de escrita ou formatação incomum",
+      "Remetente desconhecido ou endereço semelhante ao de uma empresa legítima"
+    ],
+    "recomendacoes": [
+      "Não clicar em links suspeitos",
+      "Não fornecer senhas ou códigos de autenticação",
+      "Verificar o endereço do remetente",
+      "Acessar o serviço diretamente pelo site ou aplicativo oficial"
+    ]
+  },
+
+  "senhas": {
+    "descricao": "Senhas são uma das principais formas de proteção de contas e devem ser difíceis de adivinhar e diferentes para cada serviço.",
+    "recomendacoes": [
+      "Utilizar senhas longas e difíceis de adivinhar",
+      "Evitar reutilizar a mesma senha em diferentes serviços",
+      "Utilizar um gerenciador de senhas quando possível",
+      "Não compartilhar senhas com outras pessoas"
+    ]
+  },
+
+  "autenticacao_dois_fatores": {
+    "descricao": "A autenticação em dois fatores adiciona uma segunda etapa de verificação ao processo de login.",
+    "recomendacoes": [
+      "Ativar a autenticação em dois fatores sempre que disponível",
+      "Preferir aplicativos autenticadores quando disponíveis",
+      "Nunca compartilhar códigos de autenticação recebidos"
+    ]
+  },
+
+  "engenharia_social": {
+    "descricao": "Engenharia social utiliza manipulação e persuasão para tentar convencer uma pessoa a fornecer informações ou realizar determinada ação.",
+    "sinais": [
+      "Pedidos inesperados de informações confidenciais",
+      "Tentativas de criar urgência ou medo",
+      "Pessoa desconhecida alegando representar uma empresa ou instituição",
+      "Pedidos para ignorar procedimentos normais de segurança"
+    ],
+    "recomendacoes": [
+      "Confirmar a identidade da pessoa por canais oficiais",
+      "Não fornecer informações confidenciais sob pressão",
+      "Desconfiar de solicitações incomuns ou urgentes"
+    ]
+  },
+
+  "links_suspeitos": {
+    "descricao": "Links maliciosos podem direcionar o usuário para páginas falsas ou conteúdos perigosos.",
+    "recomendacoes": [
+      "Verificar o endereço do link antes de acessá-lo",
+      "Evitar links enviados por remetentes desconhecidos",
+      "Acessar sites importantes digitando o endereço diretamente no navegador",
+      "Não baixar arquivos de fontes desconhecidas"
+    ]
+  },
+
+  "protecao_de_contas": {
+    "descricao": "A proteção de contas depende da combinação de boas práticas de autenticação e atenção a atividades suspeitas.",
+    "recomendacoes": [
+      "Utilizar senhas diferentes para cada serviço",
+      "Ativar autenticação em dois fatores",
+      "Revisar atividades e dispositivos conectados à conta",
+      "Encerrar sessões desconhecidas",
+      "Manter os dados de recuperação atualizados"
+    ]
+  }
+}
