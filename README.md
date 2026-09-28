@@ -19,11 +19,11 @@ O protótipo aborda temas como:
 
 ## 🤖 Como Funciona
 
-O usuário envia uma pergunta relacionada à segurança digital. A aplicação identifica o assunto por meio de palavras-chave e consulta a base de conhecimento correspondente.
+O usuário envia uma pergunta relacionada à segurança digital. A aplicação identifica o assunto, consulta a base de conhecimento correspondente e utiliza essas informações como contexto para o modelo Gemini gerar uma resposta.
 
 O fluxo básico é:
 
-**Usuário → Pergunta → Identificação do Tema → Base de Conhecimento → Blackwall AI → Resposta**
+**Usuário → Pergunta → Identificação do Tema → Base de Conhecimento → Gemini → Blackwall AI → Resposta**
 
 Caso o assunto não esteja disponível na base, o assistente informa que não possui informações suficientes, evitando inventar uma resposta.
 
@@ -42,6 +42,8 @@ As informações são organizadas por categorias e incluem descrições, sinais 
 - JSON
 - GitHub
 - Google Colab
+- Google Gemini
+- Google GenAI SDK
 
 ## 📂 Estrutura do Projeto
 
@@ -69,8 +71,10 @@ assistente-ciberseguranca-ia/
 Clone o repositório e instale o Gradio:
 
 ```bash
-pip install gradio
+pip install gradio google-genai
 ```
+
+Configure a variável de ambiente `GEMINI_API_KEY` com uma chave válida da API do Gemini. A chave não deve ser adicionada diretamente ao código ou enviada ao GitHub.
 
 Depois execute:
 
@@ -107,8 +111,6 @@ As respostas possuem caráter educacional e não substituem a análise de um pro
 Entre as melhorias futuras estão:
 
 - Ampliação da base de conhecimento;
-- Integração com modelos de linguagem (LLMs);
-- Identificação de intenção mais avançada;
 - Melhor compreensão de linguagem natural;
 - Avaliação automatizada das respostas;
 - Hospedagem permanente da aplicação.
