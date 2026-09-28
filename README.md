@@ -71,7 +71,7 @@ assistente-ciberseguranca-ia/
 Clone o repositório e instale o Gradio:
 
 ```bash
-pip install gradio google-genai
+pip install -r requirements.txt
 ```
 
 Configure a variável de ambiente `GEMINI_API_KEY` com uma chave válida da API do Gemini. A chave não deve ser adicionada diretamente ao código ou enviada ao GitHub.
