@@ -38,6 +38,27 @@ Também foi verificado o comportamento para assuntos não reconhecidos. Nesses c
 
 Esse comportamento ajuda a reduzir respostas inventadas quando o conhecimento necessário não está disponível.
 
+### Teste de Integração com LLM
+
+Após a integração com o Google Gemini, foi realizado um teste utilizando uma pergunta relacionada a phishing:
+
+**Pergunta:**
+
+> "Recebi um e-mail suspeito dizendo que minha conta será bloqueada. O que devo fazer?"
+
+A aplicação utilizou as informações da categoria de phishing presente na base de conhecimento como contexto para o modelo `gemini-3.1-flash-lite`.
+
+A resposta gerada identificou corretamente os sinais de phishing e apresentou recomendações presentes na base, como:
+
+- Não clicar em links suspeitos;
+- Não fornecer senhas ou códigos de autenticação;
+- Verificar o endereço do remetente;
+- Acessar o serviço diretamente pelo site ou aplicativo oficial.
+
+O modelo também informou que as orientações possuem caráter educacional.
+
+O teste demonstrou que a aplicação consegue combinar a base de conhecimento estruturada com uma LLM para produzir uma resposta contextualizada, mantendo as principais recomendações definidas pelo projeto.
+
 ## Limitações da Avaliação
 
 A avaliação foi realizada utilizando um conjunto pequeno de perguntas e cenários previamente definidos.
