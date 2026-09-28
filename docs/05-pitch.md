@@ -12,15 +12,15 @@ O Blackwall AI é um assistente virtual educacional criado para fornecer orienta
 
 O usuário pode fazer perguntas sobre temas como phishing, senhas, autenticação em dois fatores, engenharia social, links suspeitos e proteção de contas.
 
-A aplicação identifica o assunto da pergunta, consulta uma base de conhecimento controlada e apresenta informações e recomendações relacionadas ao tema.
+A aplicação identifica o assunto da pergunta, consulta uma base de conhecimento controlada e utiliza essas informações como contexto para o Google Gemini gerar uma resposta clara e contextualizada.
 
 ## Como Funciona
 
-O protótipo foi desenvolvido em Python utilizando Gradio para disponibilizar uma interface de conversa.
+O protótipo foi desenvolvido em Python utilizando Gradio para disponibilizar uma interface de conversa e o Google Gemini como modelo de linguagem para geração das respostas.
 
 O fluxo da aplicação é:
 
-Usuário → Pergunta → Identificação do Tema → Base de Conhecimento → Blackwall AI → Resposta
+Usuário → Pergunta → Identificação do Tema → Base de Conhecimento → Gemini → Blackwall AI → Resposta
 
 A base de conhecimento é armazenada em JSON e contém informações organizadas sobre diferentes temas de cibersegurança.
 
@@ -34,7 +34,7 @@ O assistente também foi projetado para não solicitar informações sensíveis,
 
 ## Diferencial
 
-O Blackwall AI combina uma interface simples de chatbot com uma base de conhecimento controlada.
+O Blackwall AI combina uma interface simples de chatbot, uma base de conhecimento controlada e um modelo de linguagem para gerar respostas a partir do contexto disponível.
 
 Em vez de tentar responder qualquer pergunta, o protótipo reconhece suas próprias limitações e prioriza informações previamente organizadas, tornando seu comportamento mais previsível e seguro.
 
@@ -43,8 +43,6 @@ Em vez de tentar responder qualquer pergunta, o protótipo reconhece suas própr
 O projeto poderá evoluir com:
 
 - Ampliação da base de conhecimento;
-- Identificação de intenção utilizando modelos de linguagem;
-- Integração com uma LLM;
 - Melhor compreensão de diferentes formas de fazer uma pergunta;
 - Métricas automatizadas para avaliação das respostas;
 - Disponibilização permanente da aplicação na web.
